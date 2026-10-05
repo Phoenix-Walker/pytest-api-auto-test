@@ -12,14 +12,14 @@ class UserApi:
         """
         url = f"{self.base_url}/users/{user_id}"
         resp = self.session.get(url)
-        return resp返回响应
+        return resp
 
     def create_post(self, payload):
         """
         新建帖子（post接口）
-        :param payload: 请求体，字典:参数 payload：请求体，字典
+        :param payload: 请求体，字典
         :return: response对象
         """
         url = f"{self.base_url}/posts"
         resp = self.session.post(url, json=payload)
-        return resp返回响应
+        return resp
