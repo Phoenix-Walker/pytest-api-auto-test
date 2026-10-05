@@ -1,6 +1,6 @@
 import pytest
 import requests
-from common.read_yaml import read_yaml从common.read_yaml导入read_yaml
+from common.read_yaml import read_yaml
 
 # 读取环境配置yaml
 env_data = read_yaml("data/env.yaml")
