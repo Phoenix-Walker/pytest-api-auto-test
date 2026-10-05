@@ -1,0 +1,23 @@
+# get_user接口测试数据
+get_user_data:
+  - case_name: "正常查询存在的用户id=1"
+    user_id: 1
+    expect_status: 200
+    expect_name: "Leanne Graham"
+  - case_name: "查询不存在用户id=999"
+    user_id: 999
+    expect_status: 404
+
+# create_post接口测试数据
+create_post_data:
+  - case_name: "正常创建帖子"
+    payload:
+      title: "test demo"
+      body: "自动化测试示例"
+      userId: 1
+    expect_status: 201
+  - case_name: "创建帖子，body参数缺失"
+    payload:
+      title: "参数缺失测试"
+      userId: 1
+    expect_status: 201
