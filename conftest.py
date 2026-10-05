@@ -9,7 +9,7 @@ base_url = env_data["test_env"]["base_url"]
 @pytest.fixture(scope="session")
 def base_url_fixture():
     """全局fixture，提供基础url，整个测试会话只执行一次"""
-    return base_url返回base_url
+    return base_url
 
 @pytest.fixture(scope="session")
 def session_fixture():
