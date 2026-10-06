@@ -41,7 +41,7 @@ pytest-api-auto-test/
 git clone https://github.com/phoenix-walker/pytest-api-auto-test.git
 cd pytest-api-auto-test
 
-pip install -r requirements.txt
+pip install -r requirements.txtpip 安装 -r requirements.txtpip install -r requirements.txt pip 安装 -r requirements.txt
 
 pytest testcases/ --alluredir=reports/allure-results
 allure generate reports/allure-results -o reports/allure-report --clean
@@ -53,3 +53,7 @@ allure open reports/allure-report
 3. 用 @pytest.mark.parametrize 实现用例参数化，一套代码执行多组测试场景
 4. Allure可视化报告，清晰展示用例执行结果，方便回归测试
 5. 分层架构：公共工具层 → 接口封装层 → 测试用例层，符合自动化项目工程化规范
+
+## 项目运行效果
+执行pytest自动化测试后控制台输出结果：
+![接口自动化测试执行结果截图](image_report_sample.png)
